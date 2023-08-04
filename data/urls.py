@@ -5,8 +5,8 @@ from .views import DataViewSet, AnnotationViewSet
 
 
 router = routers.DefaultRouter()
-router.register(r'data', DataViewSet, base_name='data')
-router.register(r'annotation', AnnotationViewSet, base_name='annotation')
+router.register(r'data', DataViewSet)
+router.register(r'annotation', AnnotationViewSet)
 
 urlpatterns = [
     url(r'^', include(router.urls))

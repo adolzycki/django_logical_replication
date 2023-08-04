@@ -1,4 +1,4 @@
-FROM python:3.6-slim
+FROM python:3.10.1
 
 MAINTAINER Rafael Ugolini "rafael.ugolini@gmail.com"
 

@@ -17,7 +17,9 @@ services:
       - database
 
   database:
-    image: postgres:10-beta4
+    image: postgres:14
+    environment:
+      - POSTGRES_HOST_AUTH_METHOD=trust
     volumes:
       - .postgresql.conf:/postgresql.conf
     networks:
